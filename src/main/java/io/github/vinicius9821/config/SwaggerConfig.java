@@ -23,7 +23,7 @@ public class SwaggerConfig {
         return new Docket(DocumentationType.SWAGGER_2)
                 .useDefaultResponseMessages(false)
                 .select()
-                .apis(RequestHandlerSelectors
+                .apis( RequestHandlerSelectors
                         .basePackage("io.github.vinicius9821.rest.controller"))
                 .paths(PathSelectors.any())
                 .build()
